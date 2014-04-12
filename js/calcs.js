@@ -1,3 +1,5 @@
+var MILE = 1.609344;
+var KM = 1.0;
 /*minsToHoursAndMins = function(mins) {
     var hours = Math.floor(mins / 60);
     var minutes = mins % 60;
@@ -9,17 +11,23 @@
 
 hoursAndMinsToMins = function(hours, mins) {
     return Number(hours) * 60 + Number(mins);
-}
+};
 
-function paceCalc($scope) {
-    var totalMins;
+paceCalc = function($scope) {
+    var timePerKm = 0;
+    $scope.mileKm = 'km';
 
     $scope.calculatePace = function () {
-        totalMins = hoursAndMinsToMins($scope.hours, $scope.minutes);
+        var totalTargetMins = hoursAndMinsToMins($scope.targetHours, $scope.targetMins);
+        timePerKm = totalTargetMins / $scope.distance;
     }
 
     $scope.getPace = function () {
-        //alert('dsfdf');
-        return totalMins;
+
+        var offset = KM;
+        if ($scope.mileKm == 'mile') {
+            offset = MILE;
+        }
+        return timePerKm * offset;
     }
-}
+};
