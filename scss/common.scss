@@ -1,0 +1,78 @@
+$title-color: #FFFFFF;
+$title-background-color: #29313C;
+
+body {
+  margin:0;
+  padding:0;
+  font-size:12px;
+  font-family:verdana, Arial, Helvetica, sans-serif;
+}
+
+.title {
+  padding: 10px;
+  color: $title-color;
+  background-color:$title-background-color;
+  /*background-color:#009fe3;*/
+}
+
+.title h1 {
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size:32px;
+  font-weight: normal;
+}
+
+.title h2 {
+  margin-left: 20px;
+  margin-top: 0;
+  font-size:12px;
+  font-weight: normal;
+}
+
+.menus {
+  display: inline-block;
+  padding: 10px;
+  color: #FFFFFF;
+  background-color: #fbd802;
+}
+
+.content p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.copyright, .copyright a {
+  color:$title-color;
+  background-color:$title-background-color;
+}
+
+.copyright {
+  padding:5px 0;
+}
+
+.copyright p {
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+
+.paceCalculator {
+  /*background-color:#8F8F8F;*/
+  background-color:#8cc63e;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius:25px;
+  width:350px;
+}
+
+.paceCalculator input {
+  margin-right: 10px;
+}
+
+.paceCalculator .result {
+  color:#444444;
+  background-color:#CCCCCC;
+  border-radius:25px;
+  padding-left:5px;
+}
