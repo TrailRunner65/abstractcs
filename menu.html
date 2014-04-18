@@ -1,5 +1,17 @@
-<ul class="menus">
+
+<li class="row dropdown menus">
+    <a class="dropdown-toggle">
+        Calculators
+    </a>
+    <ul class="dropdown-menu">
+        <li ng-repeat="menu in content.menus">
+            <a>{{menu}}</a>
+        </li>
+    </ul>
+</li>
+
+<!-- ul class="menus">
 <li ng-repeat="menu in content.menus">
 {{menu}}
-</li>
-</ul>
+</ul -->
+

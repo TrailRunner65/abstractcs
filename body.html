@@ -1,24 +1,61 @@
-<div class="content">
-<p>{{content.paceCalcText1}}</p>
+<div class="row content">
+    <p>{{content.paceCalcText1}}</p>
 
-<div class="paceCalculator" ng-controller="paceCalc">
-    <form ng-submit="calculatePace()">
-        <input type="radio" ng-model="mileKm" value="km" checked>Km
-        <input type="radio" ng-model="mileKm" value="mile">Mile<br/>
-        Distance: <input size="3" maxlength="3" ng-model="distance"/><br/>
-        Target Time:<br/>
-        Hours: <input size="2" maxlength="2" ng-model="targetHours"/>
-        Minutes: <input size="2" maxlength="2" ng-model="targetMins"/>
-        Seconds: <input size="2" maxlength="2" ng-model="targetSecs"/><br/>
-        <br/>
-        <input type="submit" value="Calculate pace"/><br/>
-        <br/>
-        <div class="result">
-        {{getPace()}} mins / {{mileKm}}
-        </div>
-    </form>
-</div>
+    <tabset>
 
-<p>{{content.paceCalcText2}}</p>
+        <tab heading="Vertical 1">
+            <!-- div class="tab-pane paceCalculator" ng-controller="paceCalc">
+                <form ng-submit="calculatePace()">
+                    <input type="radio" ng-model="mileKm" value="km" checked>Km
+                    <input type="radio" ng-model="mileKm" value="mile">Mile<br/>
+                    Distance: <input size="3" maxlength="3" ng-model="distance"/><br/>
+                    Target Time:<br/>
+                    Hours: <input size="2" maxlength="2" ng-model="targetHours"/>
+                    Minutes: <input size="2" maxlength="2" ng-model="targetMins"/>
+                    Seconds: <input size="2" maxlength="2" ng-model="targetSecs"/><br/>
+                    <br/>
+                    <input type="submit" value="Calculate pace"/><br/>
+                    <br/>
+                    <div class="result">
+                        {{getPace()}} mins / {{mileKm}}
+                    </div>
+                </form>
+            </div -->
+
+            <div class="tab-pane" >Vertical content 1</div>
+
+        </tab>
+        <tab heading="Vertical 2">
+            <div class="tab-pane">Vertical content 2</div>
+        </tab>
+
+    </tabset>
+
+    <!-- accordion close-others="oneAtATime">
+        <accordion-group heading="{{content.menus.item1}}">
+            <div class="paceCalculator" ng-controller="paceCalc">
+                <form ng-submit="calculatePace()">
+                    <input type="radio" ng-model="mileKm" value="km" checked>Km
+                    <input type="radio" ng-model="mileKm" value="mile">Mile<br/>
+                    Distance: <input size="3" maxlength="3" ng-model="distance"/><br/>
+                    Target Time:<br/>
+                    Hours: <input size="2" maxlength="2" ng-model="targetHours"/>
+                    Minutes: <input size="2" maxlength="2" ng-model="targetMins"/>
+                    Seconds: <input size="2" maxlength="2" ng-model="targetSecs"/><br/>
+                    <br/>
+                    <input type="submit" value="Calculate pace"/><br/>
+                    <br/>
+                    <div class="result">
+                        {{getPace()}} mins / {{mileKm}}
+                    </div>
+                </form>
+            </div>
+        </accordion-group>
+        <accordion-group heading="{{content.menus.item2}}">
+            <p>The body of the accordion group grows to fit the contents</p>
+        </accordion-group>
+    </accordion -->
+
+    <!-- p>{{content.paceCalcText2}}</p -->
 
 </div>
