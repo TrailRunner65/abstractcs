@@ -77,3 +77,18 @@ body {
   padding-left:5px;
 }
 
+.code .nav-tabs>li.active>a, .code .nav-tabs>li.active>a:hover, .code .nav-tabs>li.active>a:focus {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-bottom-color: transparent;
+}
+.code .nav-tabs {
+  border-bottom: 1px solid #ccc;
+}
+/*
+.tab-pane {
+  border: 1px;
+  border-bottom: 1px solid #000;
+  //background-color:#CCCCCC;
+}*/
+
