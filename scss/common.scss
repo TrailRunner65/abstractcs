@@ -1,5 +1,6 @@
 $title-color: #FFFFFF;
 $title-background-color: #29313C;
+$tab-background-color: #CCCCCC;
 
 body {
   margin:0;
@@ -77,18 +78,34 @@ body {
   padding-left:5px;
 }
 
-.code .nav-tabs>li.active>a, .code .nav-tabs>li.active>a:hover, .code .nav-tabs>li.active>a:focus {
+/* accordian */
+.panel-default .panel-heading {
+  background-color: $tab-background-color;
+}
+
+/*.panel-default .panel-heading {
+  background-color: #245269;
+  text-decoration:no-underline;
+}*/
+
+/* Tabs */
+/*
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
   background-color: #f8f8f8;
   border: 1px solid #ccc;
   border-bottom-color: transparent;
 }
-.code .nav-tabs {
+
+
+.nav-tabs {
   border-bottom: 1px solid #ccc;
+  background-color: #f8f8f8;
 }
-/*
+
+
 .tab-pane {
-  border: 1px;
-  border-bottom: 1px solid #000;
-  //background-color:#CCCCCC;
+  border: 1px solid #000000;
+  background-color:#cccccc;
 }*/
+
 

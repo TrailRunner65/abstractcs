@@ -1,5 +1,4 @@
 var App = angular.module('App', ['ui.bootstrap']);
-//angular.module('myModule', ['ui.bootstrap']);
 
 App.controller('loadContent', function($scope, $http) {
 	$http.get('content/content.json').then(function(res){
