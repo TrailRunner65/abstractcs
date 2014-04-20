@@ -14,5 +14,15 @@
             "include": "targetTime.html",
             "open": false
         }
+    ],
+    "topmenus": [
+        {
+            "title": "Calculators",
+            "selected": false
+        },
+        {
+            "title": "Books",
+            "selected": false
+        }
     ]
 }

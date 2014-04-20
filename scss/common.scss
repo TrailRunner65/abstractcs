@@ -1,12 +1,17 @@
 $title-color: #FFFFFF;
 $title-background-color: #29313C;
 $tab-background-color: #CCCCCC;
+$margins: 0px;
 
 body {
-  margin:0;
+  margin:20px;
   padding:0;
   font-size:12px;
   font-family:verdana, Arial, Helvetica, sans-serif;
+/*
+  background-image: url('../img/track.jpg');
+*/
+
 }
 
 .title {
@@ -17,7 +22,7 @@ body {
 }
 
 .title h1 {
-  margin-left: 20px;
+  margin-left: $margins;
   margin-top: 0;
   margin-bottom: 0;
   font-size:32px;
@@ -25,7 +30,7 @@ body {
 }
 
 .title h2 {
-  margin-left: 20px;
+  margin-left: $margins;
   margin-top: 0;
   font-size:12px;
   font-weight: normal;
@@ -39,8 +44,8 @@ body {
 }
 
 .content p {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: $margins;
+  margin-right: $margins;
 }
 
 .copyright, .copyright a {
@@ -62,7 +67,7 @@ body {
   /*background-color:#8F8F8F;*/
   background-color:#8cc63e;
   padding: 10px;
-  margin-left: 20px;
+  margin-left: $margins;
   border-radius:25px;
   width:350px;
 }
@@ -79,8 +84,16 @@ body {
 }
 
 /* accordian */
+.panel-group {
+  margin-left: $margins;
+  margin-right: $margins;
+}
+
 .panel-default .panel-heading {
+  background-image: url('../img/track.jpg');
+/*
   background-color: $tab-background-color;
+*/
 }
 
 /*.panel-default .panel-heading {
