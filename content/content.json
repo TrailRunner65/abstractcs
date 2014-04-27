@@ -7,7 +7,7 @@
         {
             "title": "Pace Calc",
             "include": "paceCalc.html",
-            "open": false
+            "open": true
         },
         {
             "title": "Target Time",

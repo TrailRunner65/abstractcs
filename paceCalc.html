@@ -4,9 +4,12 @@
                     <input type="radio" ng-model="mileKm" value="mile">Mile<br/>
                     Distance: <input size="3" maxlength="3" ng-model="distance"/><br/>
                     Target Time:<br/>
-                    Hours: <input size="2" maxlength="2" ng-model="targetHours"/>
-                    Minutes: <input size="2" maxlength="2" ng-model="targetMins"/>
-                    Seconds: <input size="2" maxlength="2" ng-model="targetSecs"/><br/>
+                    Hours: <input type="number" min="0" max="23" step="1" size="2" maxlength="2" value="1" ng-minlength="1" ng-maxlength="2" ng-model="targetHours"/>
+                    <!-- Hours: <input size="2" maxlength="2" ng-model="targetHours"/ -->
+                    Mins: <input type="number" min="0" max="59" step="1" size="2" maxlength="2" value="0" ng-model="targetMins"/>
+                    <!-- Minutes: <input size="2" maxlength="2" ng-model="targetMins"/ -->
+                    Seconds: <input type="number" min="0" max="59" step="1" size="2" maxlength="2" value="0" ng-model="targetSecs"/>
+                    <!-- Seconds: <input size="2" maxlength="2" ng-model="targetSecs"/><br/ -->
                     <br/>
                     <input type="submit" value="Calculate pace"/><br/>
                     <br/>

@@ -14,14 +14,14 @@ body {
 
 }
 
-.title {
+header {
   padding: 10px;
   color: $title-color;
   background-color:$title-background-color;
   /*background-color:#009fe3;*/
 }
 
-.title h1 {
+header h1 {
   margin-left: $margins;
   margin-top: 0;
   margin-bottom: 0;
@@ -29,7 +29,7 @@ body {
   font-weight: normal;
 }
 
-.title h2 {
+header h2 {
   margin-left: $margins;
   margin-top: 0;
   font-size:12px;
@@ -48,16 +48,16 @@ body {
   margin-right: $margins;
 }
 
-.copyright, .copyright a {
+footer, footer a {
   color:$title-color;
   background-color:$title-background-color;
 }
 
-.copyright {
+footer {
   padding:5px 0;
 }
 
-.copyright p {
+footer p {
   margin:0;
   padding:0;
   text-align:center;
