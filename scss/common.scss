@@ -3,6 +3,14 @@ $title-background-color: #29313C;
 $tab-background-color: #CCCCCC;
 $margins: 0px;
 
+html {
+  background: url('../img/track.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
   margin:20px;
   padding:0;
@@ -70,6 +78,7 @@ footer p {
   margin-left: $margins;
   border-radius:25px;
   width:350px;
+  box-shadow: 10px 10px 5px #888888;
 }
 
 .paceCalculator input {
