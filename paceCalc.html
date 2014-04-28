@@ -1,8 +1,8 @@
             <div class="tab-pane paceCalculator" ng-controller="paceCalc">
                 <form ng-submit="calculatePace()">
-                    <input type="radio" ng-model="mileKm" value="km" checked>Km
-                    <input type="radio" ng-model="mileKm" value="mile">Mile<br/>
-                    Distance: <input size="3" maxlength="3" ng-model="distance"/><br/>
+                    <input type="radio" ng-model="mileKm" value="km" checked tooltip="{{content.tooltips.kms}}">Km
+                    <input type="radio" ng-model="mileKm" value="mile" tooltip="{{content.tooltips.miles}}">Miles<br/>
+                    Distance: <input size="3" maxlength="3" ng-model="distance" tooltip="{{content.tooltips.distance}}"/><br/>
                     Target Time:<br/>
                     Hours: <input type="number" min="0" max="23" step="1" size="2" maxlength="2" value="1" ng-minlength="1" ng-maxlength="2" ng-model="targetHours"/>
                     <!-- Hours: <input size="2" maxlength="2" ng-model="targetHours"/ -->
@@ -13,7 +13,7 @@
                     <br/>
                     <input type="submit" value="Calculate pace"/><br/>
                     <br/>
-                    <div class="result">
+                    <div class="result" tooltip={{content.tooltips.averagePace}}>
                         {{getPace()}} mins / {{mileKm}}
                     </div>
                 </form>
