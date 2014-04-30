@@ -18,10 +18,14 @@
     "topmenus": [
         {
             "title": "Calculators",
+            "image" : "books",
+            "href": "index.html",
             "selected": true
         },
         {
             "title": "Books",
+            "image": "books",
+            "href": "books.html",
             "selected": false
         }
     ],
