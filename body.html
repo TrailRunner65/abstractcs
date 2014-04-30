@@ -32,11 +32,11 @@
     </tabset -->
 
     <accordion ng-class="{ active: isOpen, closed: !isOpen }" close-others="false">
-        <accordion-group ng-repeat="menu in content.menus" is-open="menu.open">
+        <accordion-group ng-repeat="tool in content.tools" is-open="tool.open">
             <accordion-heading>
-                {{menu.title}}<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': content.menus[$index].open, 'glyphicon-chevron-right': !content.menus[$index].open}"></i>
+                {{tool.title}}<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': content.tools[$index].open, 'glyphicon-chevron-right': !content.tools[$index].open}"></i>
             </accordion-heading>
-            <div ng-include="content.menus[$index].include"></div>
+            <div ng-include="content.tools[$index].include"></div>
         </accordion-group>
     </accordion>
 

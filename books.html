@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Running Calcs</title>
+    <script>document.write("<base href=\"" + document.location + "\" />");</script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/ui-bootstrap-tpls-0.10.0.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/calcs.js"></script>
+
+
+    <link href="lib/bootstrap-3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div ng-include="'menu.html'"></div>
+<div class="container-fluid" ng-controller="loadContent">
+    <div ng-include="'header.html'"></div>
+
+    <div ng-include="'booksBody.html'"></div>
+    <div ng-include="'footer.html'"></div>
+</div>
+
+</body>
+</html>

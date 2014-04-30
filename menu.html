@@ -1,13 +1,15 @@
 
-<li class="row dropdown menus">
-    <a class="dropdown-toggle">
-        Calculators
+<!--li class="row dropdown menus">
+    <a class="dropdown-toggle"-->
+<li class="dropdown menus" ng-class="{ active: isOpen, closed: !isOpen }">
+    <a href="books.html">
+        <img src="img/books.jpg" alt="Books"/>
     </a>
-    <ul class="dropdown-menu">
+    <!-- ul class="dropdown-menu">
         <li ng-repeat="menu in content.topmenus">
             <a>{{menu.title}}</a>
         </li>
-    </ul>
+    </ul -->
 </li>
 
 <!-- ul class="menus">
