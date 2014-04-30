@@ -46,15 +46,14 @@ header h2 {
 
 .menus {
   margin-left:-30px;
-  margin-bottom: 5px;
   display: inline-block;
   position: fixed;
   top: 50%;
-
-
   padding: 10px;
-  //color: #FFFFFF;
-  //background-color: #fbd802;
+}
+
+.menuhover {
+  border: 1px solid #000000;
 }
 
 .content p {

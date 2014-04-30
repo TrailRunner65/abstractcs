@@ -1,5 +1,7 @@
 <ul class="dropdown menus">
-    <li ng-repeat="menu in content.topmenus">
+    <li ng-repeat="menu in content.topmenus" ng-class="{menuhover: hover}"
+        ng-mouseenter="hover = true"
+        ng-mouseleave="hover = false">
         <a href="{{menu.href}}">
             <img src="img/{{menu.image}}.jpg" alt="{{menu.title}}"/>
         </a>
