@@ -1,6 +1,17 @@
 {
-    "title":"Running Calculators",
-    "subtitle": "Stuff for runners...",
+    "titles":
+    {
+        "calcs":
+        {
+            "title": "Running calculators",
+            "subtitle": "Stuff for runners..."
+        },
+        "books" :
+        {
+            "title": "Running resources",
+            "subtitle": "Recommended reading..."
+        }
+    },
     "paceCalcText1":"In order to achieve your running goals it's always a good idea to know the pace that will be required to meet a target time....Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras est felis, placerat et nunc vitae, fringilla aliquet lectus. Morbi pellentesque neque in mi sagittis, eu rutrum nulla tristique. Nulla et ante vel libero viverra pellentesque at sit amet urna. Curabitur pulvinar placerat odio in interdum. Vivamus adipiscing neque vel justo tincidunt, iaculis hendrerit sem aliquet. Proin imperdiet lectus eu risus pellentesque, eget rhoncus arcu dictum. Maecenas iaculis interdum ipsum eget tempor. In eu porttitor ipsum. Aenean faucibus, mi id tristique bibendum, diam tortor laoreet est, vulputate dignissim orci nibh pretium lorem. Sed dignissim ipsum non metus dignissim, eu interdum massa consectetur. Nullam sagittis faucibus mauris, eu congue magna placerat eget. Pellentesque condimentum rutrum vehicula. Quisque est dolor, auctor ut cursus id, pellentesque ut leo.",
     "paceCalcText2":"Curabitur velit felis, ultrices non dignissim eu, interdum non ipsum. Donec adipiscing viverra fringilla. Sed vel volutpat dolor. Donec fermentum mattis nisi nec consequat. Maecenas fermentum elit rutrum nibh commodo facilisis. Suspendisse et posuere erat. Vestibulum nec orci sit amet tellus ultricies tincidunt sed sed arcu. Cras sit amet dolor eu urna dignissim mollis id sed dui. Pellentesque eu felis interdum, blandit lorem at, mattis arcu. Nulla posuere nunc nec sem pharetra, sit amet blandit diam dictum.",
     "tools": [
@@ -18,7 +29,7 @@
     "topmenus": [
         {
             "title": "Calculators",
-            "image" : "books",
+            "image" : "calcs",
             "href": "index.html",
             "selected": true
         },
@@ -33,6 +44,6 @@
         "kms" : "Kilometers",
         "miles" : "Miles",
         "distance" : "Total distance of run",
-        "averagePace" : "Calculated pace required to meet ebtered target time"
+        "averagePace" : "Calculated pace required to meet entered target time"
     }
 }
