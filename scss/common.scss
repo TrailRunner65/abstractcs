@@ -17,17 +17,12 @@ body {
   padding:0;
   font-size:12px;
   font-family:verdana, Arial, Helvetica, sans-serif;
-/*
-  background-image: url('../img/track.jpg');
-*/
-
 }
 
 header {
   padding: 10px;
   color: $title-color;
   background-color:$title-background-color;
-  /*background-color:#009fe3;*/
 }
 
 header h1 {
@@ -58,7 +53,7 @@ header h2 {
 }
 
 .menuhover {
-  border: 1px solid #000000;
+  border: 1px solid #0000FF;
 }
 
 .content p {
@@ -83,12 +78,11 @@ footer p {
 }
 
 .paceCalculator {
+  //display: inline-block;
   background-color:#CFCFCF;
-/*
-  background-color:#8cc63e;
-*/
   padding: 10px;
-  margin-left: $margins;
+  margin-left: 20px;
+
   border-radius: $radius;
   width:350px;
   box-shadow: 10px 10px 5px #888888;
@@ -105,6 +99,19 @@ footer p {
   padding-left:5px;
 }
 
+.btn {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+.calcDescribe {
+  vertical-align: top;
+  margin: 20px;
+//  display: inline-block;
+}
+
+
 /* accordian */
 .panel-group {
   margin-left: $margins;
@@ -113,9 +120,6 @@ footer p {
 
 .panel-default .panel-heading {
   background-image: url('../img/track.jpg');
-/*
-  background-color: $tab-background-color;
-*/
 }
 
 /*.panel-default .panel-heading {
@@ -139,8 +143,8 @@ footer p {
 
 
 .tab-pane {
-  border: 1px solid #000000;
-  background-color:#cccccc;
-}*/
+  display: inline-flex;
+}
+*/
 
 
