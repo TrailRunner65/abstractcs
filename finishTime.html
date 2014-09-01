@@ -1,0 +1,27 @@
+<div class="row tab-pane">
+    <div class="col-sm-5 paceCalculator" ng-controller="paceCalc">
+        <form ng-submit="calculatePace()">
+            Distance:
+            <input size="3" maxlength="3" ng-model="distance"/>
+            <div class="btn-group">
+                <label class="btn btn-primary" ng-model="mileKm" btn-radio="'km'">Km</label>
+                <label class="btn btn-primary" ng-model="mileKm" btn-radio="'mile'">Mile</label>
+            </div>
+            <br/>
+
+            Pace per {{mileKm}}:
+            <input type="number" min="0" max="23" step="1" size="2" maxlength="2" value="1" ng-minlength="1" ng-maxlength="2" ng-model="targetHours"/>hours
+            <input type="number" min="0" max="59" step="1" size="2" maxlength="2" value="0" ng-model="targetMins"/>mins
+            <input type="number" min="0" max="59" step="1" size="2" maxlength="2" value="0" ng-model="targetSecs"/>seconds
+            <br/>
+            <input type="submit" value="Calculate finish time" class="btn btn-primary"/><br/>
+            <br/>
+            <div class="result">
+                {{getPace()}} mins / {{mileKm}}
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-5 calcDescribe">
+        <p>{{content.finishTimeTextDescribe}}</p>
+    </div>
+</div>
